@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper1"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="100dp">
+    <TextView
+        android:text="New"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textColor="@color/colorMap"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <ViewFlipper
+        android:layout_marginLeft="50dp"
+        android:id="@+id/view_flipper"
+        android:layout_width="200dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/food_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/food_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/food_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/food_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewFlipper>
+</LinearLayout>
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+<Button
+    android:layout_marginTop="20dp"
+    android:id="@+id/btn_destination_eat"
+    android:background="@drawable/btnfood"
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    android:layout_weight="1"
+    android:state_pressed="true"
+    android:state_focused="true"/>
+<Button
+    android:layout_marginTop="20dp"
+    android:id="@+id/btn_destination_play"
+    android:background="@drawable/btnplay"
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    android:layout_weight="1"
+    android:state_pressed="true"
+    android:state_focused="true"/>
+<Button
+    android:layout_marginTop="20dp"
+    android:id="@+id/btn_special"
+    android:background="@drawable/btntet"
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    android:layout_weight="1"
+    android:state_pressed="true"
+    android:state_focused="true"/>
+<Button
+    android:layout_marginTop="20dp"
+    android:id="@+id/btn_back"
+    android:text="Back"
+    android:textSize="10sp"
+    android:gravity="center"
+    android:background="@color/colorAccent"
+    android:layout_width="75dp"
+    android:layout_height="40dp"
+    android:layout_weight="1"
+    android:state_pressed="true"
+    android:state_focused="true"/>
+</LinearLayout>
+<FrameLayout
+    android:id="@+id/fragment_container_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</FrameLayout>
+</RelativeLayout>

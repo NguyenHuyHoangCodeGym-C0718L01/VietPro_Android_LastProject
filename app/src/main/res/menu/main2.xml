@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.user.finalexam.Fragment.Main2Activity">
+    <item
+        android:id="@+id/action_example"
+        apps:showAsAction="withText|ifRoom"
+        android:title="@string/action_example" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        apps:showAsAction="never"
+        android:title="@string/action_settings" />
+</menu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper1"
+    tools:context="com.example.user.finalexam.MainActivity">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_hanoi"
+        android:background="@drawable/btnhn"
+        android:gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:state_pressed="true"
+        android:state_focused="true"/>
+    <Button
+        android:layout_marginTop="100dp"
+        android:id="@+id/btn_saigon"
+        android:background="@drawable/btnsg"
+        android:gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:state_pressed="true"
+        android:state_focused="true"/>
+</LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragment_container_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</RelativeLayout>
